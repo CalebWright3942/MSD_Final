@@ -14,14 +14,24 @@ html {
 }
 
 header {
-    background-color: burlywood;
+    background-color: gray;
 }
 
 body {
   margin-bottom: 60px;
-  background-color: aquamarine;
+  background-color: antiquewhite;
 }
 
 footer {
-    background-color:coral;
+    background-color:antiquewhite;
+}
+
+table, td {
+    border: 1px solid;
+    background-color: lightgray;
+}
+
+th {
+    background-color: #04AA6D;
+      color: white;
 }
