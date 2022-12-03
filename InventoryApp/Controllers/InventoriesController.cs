@@ -20,15 +20,30 @@ namespace InventoryApp.Controllers
         }
 
         // GET: Inventories
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string searchStringSerial, string searchStringPriceFrom, string searchStringPriceTo,
+            string searchStringRoom, string searchStringInstallFrom, string searchStringInstallTo)
         {
-            var item = from m in _context.Inventory
-                         select m;
 
-            if (!String.IsNullOrEmpty(searchString))
+            var item = from m in _context.Inventory
+                       select m;
+
+            if (!String.IsNullOrEmpty(searchStringPriceFrom) && !String.IsNullOrEmpty(searchStringPriceTo))
             {
-                item = item.Where(s => s.ComputerSpecification!.Contains(searchString));
+                item = item.Where(s => s.Price >= decimal.Parse(searchStringPriceFrom) && s.Price <= decimal.Parse(searchStringPriceTo));
             }
+            if (!String.IsNullOrEmpty(searchStringInstallFrom) && !String.IsNullOrEmpty(searchStringInstallTo))
+            {
+                item = item.Where(s => s.InstallationDate >= DateTime.Parse(searchStringInstallFrom) && s.InstallationDate <= DateTime.Parse(searchStringInstallTo));
+            }
+            if (!String.IsNullOrEmpty(searchStringSerial))
+            {
+                item = item.Where(s => s.ManufacturerSerialNumber == int.Parse(searchStringSerial));
+            }
+            if (!String.IsNullOrEmpty(searchStringRoom))
+            {
+                item = item.Where(s => s.OfficeRoomNumber == searchStringRoom);
+            }
+
 
             return View(await item.ToListAsync());
         }
