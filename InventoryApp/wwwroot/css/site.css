@@ -13,6 +13,15 @@ html {
   min-height: 100%;
 }
 
+header {
+    background-color: burlywood;
+}
+
 body {
   margin-bottom: 60px;
+  background-color: aquamarine;
+}
+
+footer {
+    background-color:coral;
 }

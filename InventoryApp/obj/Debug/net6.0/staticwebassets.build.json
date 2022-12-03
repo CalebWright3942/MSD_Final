@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "twVW6xxVOkm9Jb2sorwsuq8Mo1GYVaomV1XbKDSagss=",
+  "Hash": "FWgJTl9oCDW3owzYcvbHky3pkwXnjg9416mBmvueNPo=",
   "Source": "InventoryApp",
   "BasePath": "_content/InventoryApp",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\cwrig\\Documents\\GitHub\\MSD_Final\\InventoryApp\\wwwroot\\InventoryPic.jpg",
+      "SourceId": "InventoryApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cwrig\\Documents\\GitHub\\MSD_Final\\InventoryApp\\wwwroot\\",
+      "BasePath": "_content/InventoryApp",
+      "RelativePath": "InventoryPic.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\InventoryPic.jpg"
     },
     {
       "Identity": "C:\\Users\\cwrig\\Documents\\GitHub\\MSD_Final\\InventoryApp\\wwwroot\\js\\site.js",
