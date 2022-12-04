@@ -25,7 +25,28 @@
                 Installation Date: <input type="date" name="searchStringInstallFrom" /> to <input type="date" name="searchStringInstallTo" />
             </td>
             <td>
-                Room: <select></select>
+                Room: <select id="RoomNumber" name="searchStringRoom">
+                    <option value=""></option>
+                    @{
+                        List<string> list = new List<string>();
+                        foreach(var item in Model)
+                        {
+                            if(!list.Contains(item.OfficeRoomNumber))
+                            {
+                                list.Add(item.OfficeRoomNumber);
+                            }
+                            list.Sort();
+
+                        }
+                    }
+
+                    @foreach (var item in list){
+                    
+                        <option value=@int.Parse(item)><span>@item</span></option>
+                   }
+                
+     
+                </select>
 
 
             </td>
@@ -33,6 +54,7 @@
     </table>
     <p>
         <input type="submit" value="Filter" />
+        <input type="submit" value="Clear Filters" />
     </p>
 </form>
 
