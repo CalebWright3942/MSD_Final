@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adam\\Source\\Repos\\MSD_Final\\InventoryApp\\InventoryApp.csproj": {}
+    "C:\\Users\\Adam\\source\\repos\\MSD_Final\\InventoryApp\\InventoryApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adam\\Source\\Repos\\MSD_Final\\InventoryApp\\InventoryApp.csproj": {
+    "C:\\Users\\Adam\\source\\repos\\MSD_Final\\InventoryApp\\InventoryApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adam\\Source\\Repos\\MSD_Final\\InventoryApp\\InventoryApp.csproj",
+        "projectUniqueName": "C:\\Users\\Adam\\source\\repos\\MSD_Final\\InventoryApp\\InventoryApp.csproj",
         "projectName": "InventoryApp",
-        "projectPath": "C:\\Users\\Adam\\Source\\Repos\\MSD_Final\\InventoryApp\\InventoryApp.csproj",
+        "projectPath": "C:\\Users\\Adam\\source\\repos\\MSD_Final\\InventoryApp\\InventoryApp.csproj",
         "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adam\\Source\\Repos\\MSD_Final\\InventoryApp\\obj\\",
+        "outputPath": "C:\\Users\\Adam\\source\\repos\\MSD_Final\\InventoryApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
